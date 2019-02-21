@@ -16,32 +16,46 @@
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SecondKadaiApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DvE-O2-12R">
-                                <rect key="frame" x="172" y="405" width="31" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="名前" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LGB-8p-dhe">
+                                <rect key="frame" x="37.5" y="328.5" width="300" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="名前を入力してください" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EQH-wD-e3G">
+                                <rect key="frame" x="37.5" y="161.5" width="300" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="NvT-lE-jhw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DvE-O2-12R">
+                                <rect key="frame" x="37.5" y="500.5" width="300" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="kt2-Tb-Z9s"/>
+                                </constraints>
                                 <state key="normal" title="入力"/>
                                 <connections>
                                     <segue destination="jGu-Hp-eI8" kind="show" id="BHi-dh-7PO"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="名前" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LGB-8p-dhe">
-                                <rect key="frame" x="139" y="344" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="名前を入力してください" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EQH-wD-e3G">
-                                <rect key="frame" x="92" y="132" width="191" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="DvE-O2-12R" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="1el-9v-sAZ"/>
+                            <constraint firstItem="EQH-wD-e3G" firstAttribute="width" secondItem="LGB-8p-dhe" secondAttribute="width" id="1ug-eq-Xx9"/>
+                            <constraint firstItem="LGB-8p-dhe" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="F4L-Ys-223"/>
+                            <constraint firstItem="DvE-O2-12R" firstAttribute="width" secondItem="LGB-8p-dhe" secondAttribute="width" id="Imh-Qq-MoC"/>
+                            <constraint firstItem="LGB-8p-dhe" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="MXH-MC-2g8"/>
+                            <constraint firstItem="LGB-8p-dhe" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="No6-6K-5NE"/>
+                            <constraint firstItem="EQH-wD-e3G" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="0.5" id="YTh-0x-8IY"/>
+                            <constraint firstItem="EQH-wD-e3G" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="liO-2m-g7P"/>
+                            <constraint firstItem="DvE-O2-12R" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="1.5" id="vaL-ti-YJf"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
@@ -50,7 +64,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-202" y="167"/>
+            <point key="canvasLocation" x="1146" y="-77"/>
         </scene>
         <!--Result View Controller-->
         <scene sceneID="Wev-WH-VGb">
@@ -60,16 +74,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="51l-M2-gUU">
-                                <rect key="frame" x="65" y="138" width="234" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="51l-M2-gUU">
+                                <rect key="frame" x="37.5" y="122.5" width="300" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8FM-oR-cH9">
-                                <rect key="frame" x="172" y="420" width="31" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8FM-oR-cH9">
+                                <rect key="frame" x="37.5" y="484" width="300" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Pb8-3q-QHX"/>
+                                </constraints>
                                 <state key="normal" title="戻る"/>
                                 <connections>
                                     <segue destination="86S-2B-ZLk" kind="unwind" unwindAction="unwind:" id="8IB-4r-jiT"/>
@@ -77,6 +92,15 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="51l-M2-gUU" firstAttribute="centerX" secondItem="rm8-GM-e9d" secondAttribute="centerX" id="0SM-es-GS6"/>
+                            <constraint firstItem="51l-M2-gUU" firstAttribute="width" secondItem="8FM-oR-cH9" secondAttribute="width" id="1Cg-Je-8I7"/>
+                            <constraint firstItem="8FM-oR-cH9" firstAttribute="width" secondItem="ir4-oT-Txg" secondAttribute="width" multiplier="0.8" id="4Qb-i1-Cmb"/>
+                            <constraint firstItem="51l-M2-gUU" firstAttribute="height" secondItem="8FM-oR-cH9" secondAttribute="height" id="Yt7-j7-kKE"/>
+                            <constraint firstItem="8FM-oR-cH9" firstAttribute="centerX" secondItem="rm8-GM-e9d" secondAttribute="centerX" id="mIN-yW-2mo"/>
+                            <constraint firstItem="51l-M2-gUU" firstAttribute="centerY" secondItem="rm8-GM-e9d" secondAttribute="centerY" multiplier="0.4" id="rK4-q9-rga"/>
+                            <constraint firstItem="8FM-oR-cH9" firstAttribute="centerY" secondItem="rm8-GM-e9d" secondAttribute="centerY" constant="155.5" id="wu2-ao-eh7"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="rm8-GM-e9d"/>
                     </view>
                     <connections>
@@ -86,7 +110,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KYZ-7F-cv0" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="86S-2B-ZLk" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="576.79999999999995" y="133.5832083958021"/>
+            <point key="canvasLocation" x="1257" y="-36"/>
         </scene>
     </scenes>
 </document>
